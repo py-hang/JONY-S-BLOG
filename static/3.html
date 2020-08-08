@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+    function Welcome(props) {
+        return(
+            <h1>hello {props.name}</h1>
+        )
+    }
+    const elemnt = <Welcome name="world"/>
+    ReactDOM.render(elemnt,document.querySelector("#root"))
+</script>
+</body>
+</html>
