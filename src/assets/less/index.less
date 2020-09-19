@@ -1,0 +1,58 @@
+@import "./animista.less";
+@import "./color.less";
+html {
+    overflow-y: scroll;
+}
+
+#root {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#root body {
+    position: absolute;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+}
+html,body,#root {
+    width: 100%;
+    height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+font-family: 'Marchesa';
+src: url('../font/Marchesa.otf');
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #b8b8b8;
+    -webkit-border-radius: 0;
+    position: absolute;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+}
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    height: 50px;
+    background-color: #878987;
+    -webkit-border-radius: 6px;
+    outline-offset: -2px;
+    filter: ~"alpha(opacity = 50)";
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5
+}
